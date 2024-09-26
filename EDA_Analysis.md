@@ -1,6 +1,6 @@
 # Exploratory data review
 
-We explain the data as seen and analyzed after downloading all the experiment data. We have done a preliminary review of the Paper that was published to interpret the data and develop a statistical model in predictive mainatainence area. 
+We explain the data as seen and analyzed, after downloading all the experiment data. We have done a preliminary review of the Paper (available in this repository) that was published to interpret the data and develop a statistical model in predictive mainatainence area. 
 
 In all the 3 experiments - at least one bearing failed at the end of the experiment, and one or more of them performed well past their normal lifetime. 
 
@@ -8,6 +8,7 @@ We show the statistical data of the failed bearings in each of the experiments.
 
 We have charted the data and done the stats analysis at the **start**, the approximate **middle**, and at the **end** of the experiments. 
 
+At this time we have only used the data from Test Set 2 and Test Set 3, since it was easier to handle and point out the failures. 
 
 ## Data Preview 
 
