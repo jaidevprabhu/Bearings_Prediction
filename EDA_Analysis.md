@@ -70,64 +70,54 @@ Next, we look at some advanced statistical functions calculated for each channel
 
 ## End of Experiment data analysis for each test
 
-#### Raw plots - 
+### Test 2
 
-#### Test 2
+#### Raw plots - 
 
 <center>
     <img src = images/test2_end_smooth_line.png width = 100% / >
 </center>
 
-Failure in **bearing 1** 
-Bearings 2, 3 and 4 - did not exhibit any defects. 
-
-#### Test 3
-
-<center>
-    <img src = images/test3_end_smooth_line.png width = 100% / >
-</center>
-
-Failure in **bearing 3**
-Bearings 1, 2 and 4 did not exhibit any defects. 
-
-#### Simple Stats (Min, Max, Mean, Median, Mode and Std)
-#### Test 2
+#### Standard Stats (Min, Max, Mean, Median, Mode and Std)
 
 <center>
     <img src = images/test2_end_Simple_Stats.png width = 100% />
 </center>
 
-Failure in **bearing 1** 
-Bearings 2, 3 and 4 - did not exhibit any defects. 
-
-#### Test 3
-
-<center>
-    <img src = images/test3_end_Simple_Stats.png width = 100% />
-</center>
-
-Failure in **bearing 3**
-Bearings 1, 2 and 4 did not exhibit any defects. 
-
-
 #### Advanced Plots (Skewness, Kurtosis and RMS values)
-#### Test 2
 
 <center>
     <img src = images/test2_end_Advance_Stats.png width = 100% />
 </center>
 
-Failure in **bearing 1** 
-Bearings 2, 3 and 4 - did not exhibit any defects. 
+### END RESULT 
+
+* Failure in **Bearing 1** 
+* Bearings 2, 3 and 4 - did not exhibit any defects. 
+
 
 #### Test 3
+
+#### Raw plots - 
+
+<center>
+    <img src = images/test3_end_smooth_line.png width = 100% / >
+</center>
+
+#### Standard Stats (Min, Max, Mean, Median, Mode and Std)
+
+<center>
+    <img src = images/test3_end_Simple_Stats.png width = 100% />
+</center>
+
+#### Advanced Plots (Skewness, Kurtosis and RMS values)
 
 <center>
     <img src = images/test3_end_Advance_Stats.png width = 100% />
 </center>
 
-Failure in **bearing 3**
-Bearings 1, 2 and 4 did not exhibit any defects. 
+* Failure in **Bearing 3**
+* Bearings 1, 2 and 4 did not exhibit any defects. 
 
 
 ## Summary of the Bearing Analysis Paper
