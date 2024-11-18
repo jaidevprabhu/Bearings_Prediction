@@ -53,8 +53,9 @@ Since we have obtained good accuracy for determining faults, we next look to see
 
 #### Outline of project
 
-![EDA Analysis](EDA_Analysis.md)
-![Classifiers Model Training, Prediction, Scores](Classification.md)
+[EDA Analysis](./EDA_Analysis.md)
+
+[Classifiers Model Training, Prediction, Scores](./Classification.md)
 
 
 
