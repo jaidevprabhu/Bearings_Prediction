@@ -55,7 +55,7 @@ Since we have obtained good accuracy for determining faults, we next look to see
 
 [EDA Analysis](./EDA_Analysis.md)
 
-[Classifiers Model Training, Prediction, Scores](./Classification.md)
+[Classifiers Model Training, Prediction, Scores Notebook](./Classification.ipynb)
 
 
 
