@@ -21,26 +21,27 @@ How can we accurately predict the failure of IoT-enabled rotating machinery, suc
 **What data will you use to answer you question?** 
 
 The model we develop will leverage data from sources like NASA's Prognostics Center of Excellence Data Set Repository.
-The Experiment.md file and the referenced research paper give more details about the data.  
+The [Experiment Definition](Experiment.md) and the referenced research paper give more details about the data.  
 
 #### Methodology
 **What methods are you using to answer the question?**
 
 **Data Preprocessing:** 
-- CCleaning the dataset, handling missing values, normalizing or scaling features. The data from the NASA collections archive was downloaded and evaluated. See the EDA analysis document referenced below.
+- Cleaning the dataset, handling missing values, normalizing or scaling features. The data from the NASA collections archive was downloaded and evaluated. See the EDA analysis document referenced below.
 
 **Feature Engineering:**  
-- Creating new features from the existing data that can improve model performance. Since each data point collected consists of ~20,000 values of the accelerometer sensor within a period of 1 second, we will utilize statistical methods such as min, max, std, RMS (since this is a rotating machine), and advanced statistical techniques such as Skew, Surtosis, and Shannon's Entropy - that were mentioned in the research paper to collect machine-specific signatures.
+- Creating new features from the existing data that can improve model performance. Since each data point collected consists of ~20,000 values of the accelerometer sensor within a period of 1 second, we will utilize statistical methods such as min, max, std, RMS (since this is a rotating machine), and advanced statistical techniques such as skew, kurtosis, and Shannon's Entropy - that were mentioned in the research paper to collect machine-specific signatures.
 
 **Model Selection:** 
-- Classification models such as Decision Trees, K-nearest neighbors (KNN), and Support Vector Machines (SVM) are used to predict failures. The aim is to develop a generic model applicable to various rotating machinery types.
+- Classification models such as Logistic Regression, Decision Trees, K-nearest neighbors (KNN), and Support Vector Machines (SVM) will be used to model the data. The aim is to develop a generic model applicable to various rotating machinery types.
 
 **Model Evaluation:** Cross-validation and metrics like accuracy, precision, recall, and F1-score will be used to evaluate the performance of the models across different types of machinery. We will display the results using the Confusion Matrix and RoC Curves.
 
 #### Results
 **What did your research find?**
 We completed one data processing round, and the classification models' results are detailed in the Classification document referenced below.
-One example - Model using Support Vector Machine (**SVM**) is shown here:
+
+One example - The model using Support Vector Machine (**SVM**) is shown here:
 
 ![Confusion Matrix of SVM classifier](images/CM_SVM.png)
 
