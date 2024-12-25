@@ -40,13 +40,13 @@ The [Experiment Definition](Experiment.md) give more details about the data, and
 #### Confusion Matrix - Random Forest Classifier
 
 <center>
-    <img src = images/rfc_initial_conf_matrix.png height = 50% width = 50% / >
+    <img src = images/rfc_initial_conf_matrix.png height = 66% width = 66% / >
 </center>
 
 #### Confusion Matrix - XGBoost Classifier
 
 <center>
-    <img src = images/xgb_initial_conf_matrix.png height = 50% width = 50% / >
+    <img src = images/xgb_initial_conf_matrix.png height = 66% width = 66% / >
 </center>
 
 5. We then proceed to fine tune these two models to get optimum parameters using `GridSearchCV`
@@ -61,22 +61,25 @@ We now present the final fine-tuned model's Results.
 
 #### Confusion Matrix - Random Forest Classifier
 <center>
-    <img src = images/rfc_fine_tuned_conf_matrix.png height = 50% width = 50% / >
+    <img src = images/rfc_fine_tuned_conf_matrix.png height = 66% width = 66% / >
 </center>
 
 #### Confusion Matrix - XGBoost Classifier
 
 <center>
-    <img src = images/xgb_fine_tuned_conf_matrix.png height = 50% width = 50% / >
+    <img src = images/xgb_fine_tuned_conf_matrix.png height = 66% width = 66% / >
 </center>
 
 #### Precision-Recall Curve - Random Forest Classifier
 
 <center>
-    <img src = images/P-R_Curve_RFC_fine_tuned_model.png   height = 50% width = 50% / >
+    <img src = images/P-R_Curve_RFC_fine_tuned_model.png   height = 66% width = 66% / >
 </center>
 
 ## Next steps
+
+
+
 
 ### Notebooks
 
