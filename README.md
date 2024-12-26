@@ -32,49 +32,51 @@ The [Experiment Definition](Experiment.md) give more details about the data, and
 
 #### Outline of project 
 
-1. First we divided the data into Training and Test sets with a 70:30 ratio.
-2. We used the following Classifier Algorithms to predict the Target Classes and evaluated the results.
-3. To evaluate the results we used the classification report and the Confusion Matrix.
-4. The 2 best performing models results are shown here.
+- First we divided the data into Training and Test sets with a 70:30 ratio.
+- We used the Classifier Algorithms indicated above in the Model Selection section to predict the Target Classes and evaluated the results.
+- To evaluate the results we used the classification report and the Confusion Matrix.
 
-#### Confusion Matrix - Random Forest Classifier
+#### Results 
 
-<center>
-    <img src = images/rfc_initial_conf_matrix.png height = 66% width = 66% / >
-</center>
+The 2 best performing models results are shown below.
 
-#### Confusion Matrix - XGBoost Classifier
+**Confusion Matrix - Random Forest Classifier**
+<figure>
+    <img src = images/rfc_initial_conf_matrix.png height = 66% width = 66% >
+    <figcaption> </figcaption>
+</figure>
 
-<center>
-    <img src = images/xgb_initial_conf_matrix.png height = 66% width = 66% / >
-</center>
+**Confusion Matrix - XGBoost Classifier**  
+<figure>
+    <img src = images/xgb_initial_conf_matrix.png height = 66% width = 66% >
+</figure>
 
-5. We then proceed to fine tune these two models to get optimum parameters using `GridSearchCV`
+### Fine Tuning 
 
-We use the scoring to prioritize **Recall**, since we want to make sure all the positive classes are predicted optimally. Since we have an unbalanced dataset for samples in Positive classes, we use the `predict_proba` method and choose the best threshold to do the prediction. 
+We then proceed to fine tune these two models to get optimum parameters using `GridSearchCV`
 
-Since we have to use the final model on an edge device - we decide to use the XGBoost model - since it has a lower footprint in terms of size, and very closely mathes Random Forest in performance. 
+We use the scoring to prioritize **recall**, since we want to make sure all the positive classes are predicted optimally. Since we have an unbalanced dataset for samples in Positive classes, we use the `predict_proba` method and choose the best threshold to do the prediction. 
 
-We now present the final fine-tuned model's Results. 
+Since we have to use the final model on an edge device - we decide to use the XGBoost model - since it has a lower footprint in terms of size, and very closely matches Random Forest Classifier in performance. 
 
-### After fine tuning
+We now present the final fine-tuned model's results. 
 
-#### Confusion Matrix - Random Forest Classifier
-<center>
-    <img src = images/rfc_fine_tuned_conf_matrix.png height = 66% width = 66% / >
-</center>
+**Confusion Matrix - Random Forest Classifier**
+<figure>  
+    <img src = images/rfc_fine_tuned_conf_matrix.png height = 66% width = 66% >
+</figure>
 
-#### Confusion Matrix - XGBoost Classifier
 
-<center>
+**Confusion Matrix - XGBoost Classifier**  
+<figure> 
     <img src = images/xgb_fine_tuned_conf_matrix.png height = 66% width = 66% / >
-</center>
+</figure>
 
-#### Precision-Recall Curve - Random Forest Classifier
+We also plot the Precision-Recall Curve and view the AUC values. 
 
-<center>
+<figure> 
     <img src = images/P-R_Curve_RFC_fine_tuned_model.png   height = 66% width = 66% / >
-</center>
+</figure>
 
 ## Next steps
 
@@ -83,15 +85,16 @@ We now present the final fine-tuned model's Results.
 
 ### Notebooks
 
-[EDA Analysis](./EDA_Analysis.md)
+- [EDA Analysis](./EDA_Analysis.md)
 
-[Correlation Plots](./Correlation_plots.ipynb)
+- [Correlation Plots](./Correlation_plots.ipynb)
 
-[Classifiers Model Training, Prediction, Scores Notebook](./Classification.ipynb)
+- [Classifiers Model Training, Prediction, Scores Notebook](./Classification.ipynb)
 
-[Fine Tuning Models](./Model_Fine_Tuning.ipynb)
+- [Fine Tuning Models](./Model_Fine_Tuning.ipynb)
 
 
 
-##### Contact and Further Information
-[mailto:jaidev@datasolve.ai](EMail)
+:memo: **Contact** and Further Information
+
+[EMail](mailto:jaidev@datasolve.ai)
